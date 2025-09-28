@@ -1,0 +1,7 @@
+pub const ANCHOR_DISCRIMINATOR_SIZE: usize = 8;
+pub const SECONDS_PER_DAY: i64 = 86400;
+pub const MIN_VESTING_DURATION: i64 = SECONDS_PER_DAY;
+pub const MAX_EMPLOYEE_NAME_LENGTH: usize = 50;
+pub const MAX_EMPLOYEE_POSITION_LENGTH: usize = 50;
+pub const MAX_ORG_NAME_LENGTH: usize = 100;
+pub const MAX_EMPLOYEES_PER_ORG: u64 = 1000;
