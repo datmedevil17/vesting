@@ -16,9 +16,9 @@ pub fn create_organization(
     let program_state = &mut ctx.accounts.program_state;
     let organization = &mut ctx.accounts.organization;
     
+    organization.org_id = program_state.total_organizations;
     program_state.total_organizations += 1;
     
-    organization.org_id = program_state.total_organizations;
     organization.name = name.clone();
     organization.owner = ctx.accounts.owner.key();
     organization.total_employees = 0;
